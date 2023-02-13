@@ -12,9 +12,6 @@ public class ContainsDuplicates {
         for(int j=0; j<nums.length; j++) {
             dup.add(nums[j]);
         }
-        if(dup.size()==nums.length) {
-            return false;
-        }
-        return true;
+        return dup.size()!=nums.length ? true : false;
     }
 }
